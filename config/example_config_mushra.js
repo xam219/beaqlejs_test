@@ -11,7 +11,7 @@ var TestConfig = {
   "LoopByDefault": true,
   "EnableABLoop": true,
   "EnableOnlineSubmission": false,
-  "BeaqleServiceURL": "https://github.com/xam219/beaqlejs_test/tree/master/web_service/beaqleJS_Service.php",
+  "BeaqleServiceURL": "",
   "SupervisorContact": "",
   "RandomizeTestOrder": false,
   "MaxTestsPerRun": -1,
