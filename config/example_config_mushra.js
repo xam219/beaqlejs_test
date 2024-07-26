@@ -3,18 +3,18 @@ var TestConfig = {
   "TestName": "Mushra Demo Test",
   "RateScalePng": "img/scale_abs.png",
   "RateScaleBgPng": "img/scale_abs_background.png",
-  "RateMinValue": 0,
-  "RateMaxValue": 100,
+  "RateMinValue": 1,
+  "RateMaxValue": 5,
   "RateDefaultValue":0,
-  "ShowFileIDs": false,
+  "ShowFileIDs": true,
   "ShowResults": false,
   "LoopByDefault": true,
   "EnableABLoop": true,
-  "EnableOnlineSubmission": false,
-  "BeaqleServiceURL": "/web_service/beaqleJS_Service.php",
+  "EnableOnlineSubmission": true,
+  "BeaqleServiceURL": "C:/Users/hsinte-slam-pc01/Downloads/beaqlejs-0.3/beaqlejs-0.3/web_service/beaqleJS_Service.php",
   "SupervisorContact": "",
   "RandomizeTestOrder": false,
-  "MaxTestsPerRun": 3,
+  "MaxTestsPerRun": -1,
   "RequireMaxRating": false,
   "AudioRoot": "",
   "Testsets": [
@@ -23,45 +23,19 @@ var TestConfig = {
       "Name": "Schubert 1",
       "TestID": "id1_1",
       "Files": {
-            "Reference": "audio/schubert_ref.wav",
-            "1": "audio/schubert_1.wav",
-            "2": "audio/schubert_2.wav",
-            "3": "audio/schubert_3.wav",
-            "4": "audio/schubert_anch.wav",
-        }
-    },
-    {
-      "Name": "Schubert 2",
-      "TestID": "id1_2",
-      "Files": {
-            "Reference": "audio/schubert_ref.wav",
-            "1": "audio/schubert_1.wav",
-            "2": "audio/schubert_2.wav",
-            "3": "audio/schubert_3.wav",
-            "4": "audio/schubert_anch.wav",
-        }
-    },
-    {
-      "Name": "Schubert 3",
-      "TestID": "id1_3",
-      "Files": {
-            "Reference": "audio/schubert_ref.wav",
-            "1": "audio/schubert_1.wav",
-            "2": "audio/schubert_2.wav",
-            "3": "audio/schubert_3.wav",
-            "4": "audio/schubert_anch.wav",
+            "Reference": "audio/mos/NL01v3_001.wav",
+            "1": "audio/mos/EL01v3_001.wav",
+            "2": "audio/mos/NL01v3_001.wav",
         }
     },
     //    
     {
-       "Name": "Castanets",
+       "Name": "Schubert 1",
        "TestID": "id2_1",
        "Files": {
-            "Reference": "audio/castanets_ref.wav",
-            "1": "audio/castanets_1.wav",
-            "2": "audio/castanets_2.wav",
-            "3": "audio/castanets_3.wav",
-            "4": "audio/castanets_anch.wav",
+        "Reference": "audio/mos/NL01v3_002.wav",
+        "1": "audio/mos/EL01v3_002.wav",
+        "2": "audio/mos/NL01v3_002.wav",
         }
     },
   ]
