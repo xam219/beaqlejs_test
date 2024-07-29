@@ -852,10 +852,10 @@ $.extend({ alert: function (message, title) {
             body: formData
         }).then(() => {
             console.log('Results submitted successfully');
-            this.showResultsBox(true);  // 顯示結果已提交的消息
+            //this.showResultsBox(true);  // 顯示結果已提交的消息
         }).catch(error => {
             console.error('Error submitting results:', error);
-            this.showResultsBox(false);  // 顯示提交失敗的消息
+            //this.showResultsBox(false);  // 顯示提交失敗的消息
         });
 
     } else {
