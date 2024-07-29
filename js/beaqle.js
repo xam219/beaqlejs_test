@@ -835,7 +835,7 @@ $.extend({ alert: function (message, title) {
 
 
 	// add by hwanght
-	if (this.config.EnableOnlineSubmission == true) {
+	if (this.TestConfig.EnableOnlineSubmission == true) {
 	// Google Form 的 URL
         var formUrl = this.config.BeaqleServiceURL;
 
