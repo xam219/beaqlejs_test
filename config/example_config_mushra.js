@@ -11,7 +11,7 @@ var TestConfig = {
   "LoopByDefault": true,
   "EnableABLoop": true,
   "EnableOnlineSubmission": true,
-  "BeaqleServiceURL": "https://docs.google.com/forms/d/e/13T55bvp_PRz6eCpS-wOYvdiMWMko4_eeJLJ9ew_C7t8/formResponse",
+  "BeaqleServiceURL": "https://docs.google.com/forms/d/13T55bvp_PRz6eCpS-wOYvdiMWMko4_eeJLJ9ew_C7t8/formResponse",
   "SupervisorContact": "",
   "RandomizeTestOrder": false,
   "MaxTestsPerRun": -1,
