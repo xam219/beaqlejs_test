@@ -1201,7 +1201,7 @@ MushraTest.prototype.formatResults = function () {
 
             row  = tab.insertRow(-1);
             cell = row.insertCell(-1);
-            //cell.innerHTML = "Filename";
+            cell.innerHTML = "Filename";
             cell = row.insertCell(-1);
             cell.innerHTML = "Rating";
 
