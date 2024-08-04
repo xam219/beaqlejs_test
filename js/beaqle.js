@@ -823,6 +823,7 @@ $.extend({ alert: function (message, title) {
 
     // ###################################################################
     // submit test results to server
+    
     ListeningTest.prototype.SubmitTestResults = function () {
 
         var UserObj = new Object();
@@ -832,7 +833,39 @@ $.extend({ alert: function (message, title) {
 
         var EvalResults = this.TestState.EvalResults;        
         EvalResults.push(UserObj)
-        
+                	// add by hwanght
+	    if (this.TestConfig.EnableOnlineSubmission == true) {
+        // Google Form 的 URL
+            var formUrl = this.TestConfig.BeaqleServiceURL;
+    
+            // 創建 FormData 對象
+            var formData = new FormData();
+    
+            // 添加測試結果到 FormData
+            formData.append('entry.2126895404', JSON.stringify(EvalResults));  // 替換 xxxxxx 為實際的入口ID
+    
+            // 使用 fetch 發送數據
+            fetch(formUrl, {
+                method: 'POST',
+                mode: 'no-cors', // 重要：避免 CORS 問題
+                body: formData
+            }).then(() => {
+                //console.log('Results submitted successfully');
+                //this.showResultsBox(true);  // 顯示結果已提交的消息
+                $('#SubmitBox').html("Your submission was successful! <br/><br/>");
+                testHandle.TestState.TestIsRunning = 0;
+            }).catch(error => {
+                //console.error('Error submitting results:', error);
+                //this.showResultsBox(false);  // 顯示提交失敗的消息
+                $('#SubmitBox').html("Error submitting results! <br/><br/>");
+                testHandle.TestState.TestIsRunning = 0;
+            });
+    
+            } else {
+            this.showResultsBox(true);
+            }
+            // add end
+	/*    
         var testHandle = this;
         $.ajax({
                     type: "POST",
@@ -877,7 +910,7 @@ $.extend({ alert: function (message, title) {
                     }
                 });
         $('#BtnSubmitData').button('option',{ icons: { primary: 'load-indicator' }});
-
+	*/
     }
 
     // ###################################################################
