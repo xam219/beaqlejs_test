@@ -25,7 +25,6 @@ var TestConfig = {
       "Files": {
             "Reference": "audio/mos/NL01v3_audio_segment_16k/NL01v3_241.wav",
             "EL": "audio/mos/EL01v3_audio_segment_16k/EL01v3_241.wav",
-            "NL": "audio/mos/NL01v3_audio_segment_16k/NL01v3_241.wav",
             "knnvc_a2a": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_knnvc_dynamic_mlpg_k256/241.wav",
             "knnvc_o2o": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_knnvc_static_parallel_k8/241.wav",
             "lle_o2o": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_llevc_dynamic_k256/241.wav",
@@ -40,7 +39,6 @@ var TestConfig = {
        "Files": {
         "Reference": "audio/mos/NL01v3_audio_segment_16k/NL01v3_242.wav",
         "EL": "audio/mos/EL01v3_audio_segment_16k/EL01v3_242.wav",
-        "NL": "audio/mos/NL01v3_audio_segment_16k/NL01v3_242.wav",
         "knnvc_a2a": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_knnvc_dynamic_mlpg_k256/242.wav",
         "knnvc_o2o": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_knnvc_static_parallel_k8/242.wav",
         "lle_o2o": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_llevc_dynamic_k256/242.wav",
