@@ -1105,11 +1105,11 @@ MushraTest.prototype.createTestDOM = function (TestIdx) {
         fileID = "Reference";
         row  = tab.insertRow(-1);
         cell[0] = row.insertCell(-1);
-        cell[0].innerHTML = "<span class='testItem'>Reference</span>";
+        cell[0].innerHTML = "<span class='testItem'>         </span>";
         cell[1] = row.insertCell(-1);
-        cell[1].innerHTML =  '<button id="play'+fileID+'Btn" class="playButton" rel="'+fileID+'">Play</button>';
+        cell[1].innerHTML =  "<span class='testItem'>    </span>";
         cell[2] = row.insertCell(-1);
-        cell[2].innerHTML = "<button class='stopButton'>Stop</button>";  	
+        cell[2].innerHTML = "<span class='testItem'>    </span>";  	
         cell[3] = row.insertCell(-1);
         cell[3].innerHTML = "<img id='ScaleImage' src='"+this.TestConfig.RateScalePng+"'/>";
 	cell[4] = row.insertCell(-1);
