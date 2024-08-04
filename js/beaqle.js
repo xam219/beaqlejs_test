@@ -1201,7 +1201,7 @@ MushraTest.prototype.formatResults = function () {
 
             row  = tab.insertRow(-1);
             cell = row.insertCell(-1);
-            cell.innerHTML = "Filename";
+            //cell.innerHTML = "Filename";
             cell = row.insertCell(-1);
             cell.innerHTML = "Rating";
 
@@ -1217,7 +1217,7 @@ MushraTest.prototype.formatResults = function () {
                 cell.innerHTML = rating;
 
                 testResult.rating[fileID]   = rating;
-                testResult.filename[fileID] = fileArr[fileID];
+                //testResult.filename[fileID] = fileArr[fileID];
             });
             
             resultstring += tab.outerHTML + "\n";
