@@ -20,48 +20,16 @@ var TestConfig = {
   "Testsets": [
     //    
     {
-      "Name": "Schubert 1",
+      "Name": "Naturalness/Intelligibility",
       "TestID": "id1_1",
       "Files": {
-            "Reference": "audio/schubert_ref.wav",
-            "1": "audio/schubert_1.wav",
-            "2": "audio/schubert_2.wav",
-            "3": "audio/schubert_3.wav",
-            "4": "audio/schubert_anch.wav",
-        }
-    },
-    {
-      "Name": "Schubert 2",
-      "TestID": "id1_2",
-      "Files": {
-            "Reference": "audio/schubert_ref.wav",
-            "1": "audio/schubert_1.wav",
-            "2": "audio/schubert_2.wav",
-            "3": "audio/schubert_3.wav",
-            "4": "audio/schubert_anch.wav",
-        }
-    },
-    {
-      "Name": "Schubert 3",
-      "TestID": "id1_3",
-      "Files": {
-            "Reference": "audio/schubert_ref.wav",
-            "1": "audio/schubert_1.wav",
-            "2": "audio/schubert_2.wav",
-            "3": "audio/schubert_3.wav",
-            "4": "audio/schubert_anch.wav",
-        }
-    },
-    //    
-    {
-       "Name": "Castanets",
-       "TestID": "id2_1",
-       "Files": {
-            "Reference": "audio/castanets_ref.wav",
-            "1": "audio/castanets_1.wav",
-            "2": "audio/castanets_2.wav",
-            "3": "audio/castanets_3.wav",
-            "4": "audio/castanets_anch.wav",
+            "Reference": "audio/mos/NL01v3_audio_segment_16k/NL01v3_241.wav",
+            "EL": "audio/mos/EL01v3_audio_segment_16k/EL01v3_241.wav",
+            "knnvc_a2a": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_knnvc_dynamic_mlpg_k256/241.wav",
+            "knnvc_o2o": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_knnvc_static_parallel_k8/241.wav",
+            "lle_o2o": "audio/mos/EL01v3_audio_segment_16k_to_NL01v3_audio_segment_16k_llevc_dynamic_k256/241.wav",
+            "cdvae": "audio/mos/EL01v3_NL01v3_stage2_wavlm_large_cdvqvae_vocoder_prematch/EL01v3_NL01v3_241.wav",
+            "anchor": "audio/mos/anchor.wav",
         }
     },
   ]
