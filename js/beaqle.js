@@ -1146,14 +1146,12 @@ MushraTest.prototype.createTestDOM = function (TestIdx) {
                 fileIDstr = fileID;
         }
         cell[3].innerHTML = "<div class='rateSlider' id='slider"+fileID+"' rel='"+relID+"'>"+fileIDstr+"</div>";
-        /*
 	cell[4] = row[i].insertCell(-1);
         var fileIDstr = "";
         if (this.TestConfig.ShowFileIDs) {
                 fileIDstr = fileID;
         }
         cell[4].innerHTML = "<div class='rateSlider' id='sliderI"+fileID+"' rel='"+relID+"'>"+fileIDstr+"</div>";
-	*/
         this.addAudio(TestIdx, fileID, relID);
 
     }        
